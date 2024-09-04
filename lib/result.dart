@@ -33,7 +33,11 @@ class Result extends StatelessWidget {
         children: [
           _buildBMICircleAvatar(),
           _buildBMICategoryText(bmiCategory),
-          _buildActionButtons(context),
+        CustomButton(
+
+        label: "RECALCULATE",
+        onTap: () => _navigateToPage(context, CalculatorPage()),
+      ),
         ],
       ),
     );
@@ -90,24 +94,6 @@ class Result extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButtons(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        CustomButton(
-          p: 30,
-          label: "RECALCULATE",
-          onTap: () => _navigateToPage(context, CalculatorPage()),
-        ),
-        SizedBox(width: 10),
-        CustomButton(
-          p: 50,
-          label: "EXIT",
-          onTap: () => _navigateToPage(context, HomePage()),
-        ),
-      ],
-    );
-  }
 
   void _navigateToPage(BuildContext context, Widget page) {
     Navigator.push(

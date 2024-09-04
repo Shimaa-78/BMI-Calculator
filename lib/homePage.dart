@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildStartButton(BuildContext context) {
     return CustomButton(
-      p: 20,
+
       label: "START",
       onTap: () => _navigateToCalculatorPage(context),
     );

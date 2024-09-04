@@ -126,14 +126,14 @@ Expanded slider({
 }
 
 
-Widget CustomButton({required String label, required VoidCallback onTap,required double p}) {
+Widget CustomButton({required String label, required VoidCallback onTap,}) {
   return GestureDetector(
     onTap: onTap,
     child: Container(
-        padding: EdgeInsets.symmetric(horizontal: p),
+
       
-        // width: 200,
-        height: 30,
+         width: 200,
+        height: 50,
       
       decoration: BoxDecoration(
         border: Border.all(

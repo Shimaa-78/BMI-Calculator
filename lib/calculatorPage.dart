@@ -139,7 +139,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
   Widget _buildCalculateButton() {
     return CustomButton(
-      p: 100,
+
       label: "CALCULATE",
       onTap: () {
         _calculateBMI();
